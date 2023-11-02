@@ -6,13 +6,21 @@
     <title>Imagens Dinamicas</title>
 </head>
 <body>
-    
+    <h1>Imagens Dinamicas</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou so aumente ou diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/imagem-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagem-m.png" type="image/png">
+        <img src="imagens/imagem-g.png" alt="Imagem Flexivel">
+    </picture>
 
-
-
-
-
-
-    
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midia/Speak The Truth - Go By Ocean _ Ryan McCaffrey.mp3" type="audio/mpeg">
+        <source src="midia/Speak The Truth - Go By Ocean _ Ryan McCaffrey.ogg" type="audio/ogg">
+        <source src="midia/Speak The Truth - Go By Ocean _ Ryan McCaffrey.wave" type="audio/wave">
+        <p>Opções para baixar: <a href="midia/Speak The Truth - Go By Ocean _ Ryan McCaffrey.mp3">Baixe aqui o seu Audio</a></p>
+    </audio>
 </body>
 </html>
